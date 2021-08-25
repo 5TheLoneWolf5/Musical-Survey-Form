@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <h2 id="title">Musical Survey Form</h2> 
+     <p id="description"><em>With that, you will be able to apply for a place at the Imaginary Conservatory of Music
+</em></p>
+   </div>
+  </head>
+  <body>
+  <style>
+  body {
+  background: #eb01a5;
+  background-image: url("https://images5.alphacoders.com/452/thumb-1920-452391.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} 
+
+html {
+  scroll-behavior: smooth;
+}
+
+#blur {
+  filter: blur(3px);
+}
+
+.optional {
+  font-size: 17px;
+  opacity: 70%;
+}
+
+input, 
+button, 
+select, 
+textarea, 
+.form-control {
+  font-family: 'Open sans';
+  padding: 4px;
+  font-size: 70%;
+  margin-top: 6px;
+  opacity: 87%;
+  border: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #f9eedd;
+}
+
+#title {
+  text-align: center;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+  font-weight: 530; 
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  display: block;  
+  color: #dbb677;
+  font-size: 40px; 
+
+}
+
+#description {
+    font-size: 1.125rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -23px;
+    color: #ead8ba;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+#survey-form {
+  margin: auto auto auto auto;
+  box-shadow: 1px 2px 20px black;
+  width: 43%;
+  padding: 20px 10px 20px 20px;
+  border-radius: 0.25rem;
+  color: #dbb677;
+  font-size: 20px;
+  font-family: 'Open sans';
+  text-shadow: 0px 2px 4px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+}
+
+select#dropdown {
+  font-size: 70%;
+  width: 642px;
+  height: 39px;
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+.play {
+  display: block;
+  font-size: 19px;
+}
+
+#name-label {
+  width: 620px;
+  height: 30px;
+  border-radius: 0.25rem;
+  border-color: #303c4b;
+}
+
+#email-label {
+  width: 620px;
+  height: 30px;
+  border-radius: 0.25rem;
+  border-color: #303c4b;
+}
+
+#number-label {
+  width: 620px;
+  height: 30px;
+  border-radius: 0.25rem;
+  border-color: #303c4b;
+}
+
+#name {
+  font-family: 'Poppins', sans-serif;
+}
+
+.border {
+  display: block;
+  background-color: rgba(255, 250, 255, 0.1);
+  border-radius: 8px;
+}
+
+#thoughts {
+  min-height: 100px;
+  resize: none;
+  margin: auto auto auto auto;
+  width: 620px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+}
+
+#submit {
+  width: 600px;
+  background-color: #dbb677;
+  height: 50px;
+  margin-left: 14px;
+  font-size: 16px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+
+  </style>
+  <div>
+    <form id="survey-form">
+      <div>
+        <label id="name" for="name">&nbsp;Name<br>
+      <input style="width: 95%;" type="text" name="name" id="name-label" placeholder="Enter your name" required>
+        </label>
+        <br></br>
+      </div>
+      <div>
+        <label id="email">&nbsp;Email <br>
+        <input style="width: 95%;" type="email" name="name" id="email-label" placeholder="Enter your email" required>
+        </label>
+        <br></br>
+    </div>
+   
+      <div>
+        <label id="number">&nbsp;Age (<span class="optional"><small>optional</small></span>) <br>
+        <input style="width: 95%;" type="number" name="age" id="number-label" placeholder="Age" min="10" max="99"> <!-- optional -->
+        </label>
+        <br>
+      </div>
+      <!-- values: name. -->
+      <div>
+        <p>&nbsp;Select the instrument you play (<span class="optional"></small>only one allowed</small></span>): </p>
+      <div class="border">
+        <label class="play">
+        <input type="radio" name="name" class="gaga" value="piano" required=""</input>&nbsp;Piano
+          </label>
+        <label class="play">
+          <input type="radio" name="name" class="gaga" value="drum"</input>&nbsp;Drum
+          </label>
+        <label class="play">
+          <input type="radio" name="name" class="gaga" value="violin"</input>&nbsp;Violin
+          </label>
+        <label class="play">
+          <input type="radio" name="name" class="gaga" value="cello"</input>&nbsp;Cello
+        </label>
+          <label class="play">
+          <input type="radio" name="name" class="gaga" value="trumpet"</input>&nbsp;Trumpet
+          </label>
+        <label class="play">
+          <input type="radio" name="name" class="gaga" value="flute"</input>&nbsp;Flute
+          </label>
+        <label class="play">
+          <input type="radio" name="name" class="gaga" value="guitar"</input>&nbsp;Guitar
+          </label>
+        <label class="play">
+          <input type="radio" name="name" class="gaga" value="other"</input>&nbsp;Other
+          </label>
+</div>
+</div>
+<br>
+        <div style="margin: -57px 0 0 0 0;">&nbsp;Select your current level:
+        <select style="width: 95%;" id="dropdown" name="role" required>
+<option>Select your  level</option>
+<option value="beginner">Beginner</option>
+<option value="amateur">Amateur</option>
+<option value="intermediate">Intermediate</option>
+<option value="advanced">Advanced</option>
+</select>
+</div>
+
+<div class="checkbox-group required">
+  <p>&nbsp;Select your most proficient musical genres (<span class="optional"></small>more than one allowed</small></span>):</p>
+<div class="border">
+<label class="play">
+        <input type="checkbox" name="value" class="gaga" value="rock"</input>&nbsp;Rock music
+</label>
+<label class="play">
+        <input type="checkbox" name="value" value="eletronic"</input>&nbsp;Electronic music
+</label>
+  <label class"play">
+    <input type="checkbox" name="value" value="classical"</input>&nbsp;Classical music
+  </label>
+  <label class="play">
+        <input type="checkbox" name="value" value="popular"</input>&nbsp;Popular music
+</label>
+  <label class"play">
+    <input type="checkbox" name="value" value="country"</input>&nbsp;Country music
+  </label>
+  <label class="play">
+    <input type="checkbox" name="value" value="other1"</input>&nbsp;Other
+  </label>
+</div>
+</div>
+<div>
+  <p>&nbsp;You can add extra information and suggestions here:</p>
+<textarea style="width: 95%;" id="thoughts" placeholder="Enter your text here..."></textarea>
+  <!-- Not required. -->
+</div>
+<br>
+<button style="width: 95%;" id="submit" type="submit">Submit</button>
+    </form>
+    </div>
+  </body>
+<footer>
+</footer>
+<!-- It is possible only to add a "required" field in the rest of the elements through javascript. Linear-gradient/blur didn't work very well. MEDIA QUERY IS NOT WORKING AS WELL, FIND OUT THE PROBLEM IN THE FUTURE. -->
+   </html>
